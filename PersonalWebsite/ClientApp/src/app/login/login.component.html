@@ -1,0 +1,9 @@
+<main id="login_main">
+  <h1>Welcome</h1>
+  <form id="login_form" [formGroup]="userCredentials">
+    <input type="text" placeholder="Username" name="usernameValue" formControlName="usernameValue"/>
+    <input type="text" placeholder="Password" name="passwordValue"/>
+    <input type="button" value="Login" (click)="processCredentials()"/>
+    <p> {{username}}</p>
+  </form>
+</main>
